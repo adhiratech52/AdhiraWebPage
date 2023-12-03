@@ -38,16 +38,8 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
-                                    className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/logo.svg'}
-                                    alt="paidin-logo"
-                                />
-                                <img
-                                    className="hidden h-full w-full lg:block"
-                                    src={'/assets/logo/logo.svg'}
-                                    alt="paidin-logo"
-                                />
+                             
+                             <h2 style={{fontSize:35}}>Adhira</h2>
                             </div>
 
                             {/* LINKS */}
