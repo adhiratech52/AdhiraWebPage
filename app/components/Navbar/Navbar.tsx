@@ -39,7 +39,7 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center">
                              
-                             <h2 style={{fontSize:35}}>Adhira</h2>
+                            <h1 className='text-black text-4xl text-center lg:text-start md:text-30xl lh-133 pt-(-1)'>Adhira</h1>
                             </div>
 
                             {/* LINKS */}
