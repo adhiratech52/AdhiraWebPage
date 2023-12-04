@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
         <Disclosure as="nav" className="navbar">
             <>
-                <div className="mx-auto max-w-7xl px-6 md:py-4 lg:px-8">
+                <div className="mx-auto max-w-6xl px-6 md:py-0 lg:px-10 ">
                     <div className="relative flex h-20 items-center justify-between">
                         <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
 
@@ -39,13 +39,35 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center">
                              
-                            <h1 className='text-black text-4xl text-center lg:text-start md:text-30xl lh-133 pt-(-1)'>Adhira</h1>
+                            <h1 className='text-black text-4xl text-center lg:text-start md:text-30xl lh-133'>Adhira</h1>
                             </div>
 
                             {/* LINKS */}
 
-                            <div className="hidden lg:block ml-20">
-                                <div className="flex space-x-4">
+                            {/* <div className="hidden lg:block ml-20">
+                                <div className="flex space-x-8">
+                                    {navigation.map((item) => (
+                                        <Link
+                                            key={item.name}
+                                            href={item.href}
+                                            className={classNames(
+                                                item.current ? ' text-black hover:opacity-75' : 'hover:text-black hover:opacity-75',
+                                                'px-3 py-4 text-lg font-normal text-black space-links'
+                                            )}
+                                            aria-current={item.href ? 'page' : undefined}
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div> */}
+                        </div>
+
+                        {/* SIGNIN DIALOG */}
+
+                        {/* <Signdialog /> */}
+                        <div className="hidden lg:block ml-20">
+                                <div className="flex space-x-8">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
@@ -61,16 +83,11 @@ const Navbar = () => {
                                     ))}
                                 </div>
                             </div>
-                        </div>
-
-                        {/* SIGNIN DIALOG */}
-
-                        <Signdialog />
 
 
                         {/* REGISTER DIALOG */}
 
-                        <Registerdialog />
+                        {/* <Registerdialog />   */}
 
 
                         {/* DRAWER FOR MOBILE VIEW */}

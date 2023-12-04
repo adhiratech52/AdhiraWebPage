@@ -26,14 +26,9 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
     >
  
                 <article className="relative w-270 max-w-lg pb-10 flex flex-col space-y-6 h-full">
-                    <header className="p-4 flex items-center justify-between"><img
-                        className="h-12 w-40"
-                        src={"/assets/logo/logo.svg"}
-                        alt="Courses-Logo"
-                        onClick={() => {
-                            setIsOpen(false);
-                        }}
-                    /><XMarkIcon className="block h-6 w-6" onClick={() => {
+                    <header className="p-4 flex items-center justify-between"> 
+                    <h1 className='text-black text-4xl text-center lg:text-start md:text-30xl lh-133'>Adhira</h1>
+                    <XMarkIcon className="block h-6 w-6" onClick={() => {
                         setIsOpen(false);
                     }} />
                     </header>

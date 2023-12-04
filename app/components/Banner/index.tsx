@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Banner = () => {
 
     return (
-        <div className='bg-header'>
+        <div className='bg-header' style={{paddingLeft:50,paddingRight:50}}>
             <div className="mx-auto max-w-7xl pt-20 sm:pb-24 px-6">
 
                 <div className='grid grid-cols-1 lg:grid-cols-12'>
