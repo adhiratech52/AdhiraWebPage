@@ -1,1 +1,1 @@
-Adhira Tech
+Adhira.tech
