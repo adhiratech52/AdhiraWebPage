@@ -1,11 +1,12 @@
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
+import Home from './page';
 
 
 export const metadata = {
   title: 'Adhira Tech',
-  description: 'Creating New Technology Solutions',
+  description: 'Building Tech Products',
 }
 
 export default function RootLayout({
@@ -15,9 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body style={{overflowX:'hidden'}} className='no-scrollbar'>
         <Navbar />
-        {children}
+        <Home/>
         <Footer />
       </body>
     </html>
