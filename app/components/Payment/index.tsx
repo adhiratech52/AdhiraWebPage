@@ -13,10 +13,10 @@ const Payment = () => {
                     </div>
 
                     <div className='col-span-6 flex flex-col justify-center mb-32'>
-                        <h2 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>Now its time to change payment method.</h2>
-                        <h3 className='text-black text-lg font-normal text-center lg:text-start lh-173 opacity-75 pt-3'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</h3>
+                        <h2 className='text-midnightblue text-4xl sm:text-5xl font-semibold text-center lg:text-start lh-143'>Are You Studying Design??</h2>
+                        <h3 className='text-black text-lg font-normal text-center lg:text-start lh-173 opacity-75 pt-3'>We Are looking for<b> Designers</b>. If you are studying Design , We would love to hire you as an Intern</h3>
                         <Link href={'/'} className="text-electricblue text-lg font-medium flex gap-2 pt-4 mx-auto lg:mx-0">
-                            Learn more <Image src="/assets/people/arrow-right.svg" alt="arrow-right" width={24} height={24} />
+                            Apply Now <Image src="/assets/people/arrow-right.svg" alt="arrow-right" width={24} height={24} />
                         </Link>
                     </div>
 
