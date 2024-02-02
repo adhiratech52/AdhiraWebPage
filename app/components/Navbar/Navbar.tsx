@@ -15,10 +15,10 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Our Team', href: '#team', current: false },
-    { name: 'Pricing', href: '#pricing', current: false },
-    { name: 'Products', href: '#products', current: false },
-    { name: 'Blog', href: '#blog', current: true },
+    { name: 'Our Team', href: 'team', current: false },
+    { name: 'Pricing', href: 'pricing', current: false },
+    { name: 'Products', href: 'products', current: false },
+    { name: 'Blog', href: 'blog', current: true },
 ]
 
 function classNames(...classes: string[]) {
@@ -37,8 +37,9 @@ const Navbar = () => {
                         <div className="flex items-center sm:items-stretch sm:justify-start" >
 
                             <div className="flex flex-shrink-0 items-center">
-
+                                <Link href={'/'}>
                                 <h1 className='text-black text-4xl text-center lg:text-start md:text-30xl lh-133'>Adhira</h1>
+                                </Link>
                             </div>
                         </div>
                         <div className="hidden lg:block ml-20">
@@ -60,9 +61,11 @@ const Navbar = () => {
                         </div>
                         <div className="flex flex-shrink-0 items-center">
                         <div className='pt-0 mx-auto lg:mx-0'>
+                            <Link href={'/login'}>
                             <button className="text-white text-md font-medium py-3 px-10 rounded-full transition duration-150 ease-in-out bg-electricblue hover:text-white hover:bg-blue">
                                 Log In
                             </button>
+                            </Link>
                         </div>
                         </div>
                         <div className='block lg:hidden'>

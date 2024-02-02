@@ -1,7 +1,7 @@
 import './globals.css';
 import Navbar from './components/Navbar/index';
 import Footer from './components/Footer/index';
-import Home from './page';
+import Page  from './page';
 
 
 export const metadata = {
@@ -17,9 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{overflowX:'hidden'}} className='no-scrollbar'>
-        <Navbar />
-        <Home/>
-        <Footer />
+        {children}
+       {/* <Navbar/>
+       <Page/>
+       <Footer/> */}
       </body>
     </html>
   )
